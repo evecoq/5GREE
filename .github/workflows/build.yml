@@ -15,6 +15,7 @@ jobs:
         run: npm run build
 
   build:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Copier code Git vers serveur Ubuntu
